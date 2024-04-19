@@ -1,0 +1,1 @@
+ /Users/parth/StudioProjects/book-app/.dart_tool/flutter_build/ffad0886d4edeb4fd70971d97f11a37e/native_assets.yaml: 
