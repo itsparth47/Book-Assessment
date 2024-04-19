@@ -1,0 +1,1 @@
+ /Users/parth/StudioProjects/book-app/.dart_tool/flutter_gen/gen_l10n/app_localizations_en.dart /Users/parth/StudioProjects/book-app/.dart_tool/flutter_gen/gen_l10n/app_localizations.dart:  /Users/parth/StudioProjects/book-app/l10n.yaml /Users/parth/StudioProjects/book-app/lib/src/localization/app_en.arb
