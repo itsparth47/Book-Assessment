@@ -21,7 +21,7 @@ class Book {
   static List<Book> generateRecommendedBook() {
     return [
       Book(
-          'assets/images/medical_book1.jpg',
+          'https://m.media-amazon.com/images/I/71T-zdpOTzL._AC_UF1000,1000_QL80_DpWeblab_.jpg',
           'Gray\'s Anatomy',
           'Henry Gray',
           4.8,
@@ -30,7 +30,7 @@ class Book {
           ['Medicine', 'Anatomy', 'Reference'],
           'Gray\'s Anatomy is an English-language textbook of human anatomy originally written by Henry Gray. The book is widely regarded as an extremely influential work on the subject.'),
       Book(
-          'assets/images/medical_book2.jpg',
+          'https://m.media-amazon.com/images/I/71LTMZ+JkgL._AC_UF1000,1000_QL80_.jpg',
           'Robbins Basic Pathology',
           'Vinay Kumar, Abul K. Abbas, Jon C. Aster',
           4.7,
@@ -39,7 +39,7 @@ class Book {
           ['Medicine', 'Pathology', 'Textbook'],
           'Robbins Basic Pathology is a comprehensive book in the field of pathology, written by Vinay Kumar, Abul K. Abbas, and Jon C. Aster. It is widely used by medical students and professionals worldwide.'),
       Book(
-          'assets/images/medical_book3.jpg',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2reYJOsyxaoZsYQpz9DcQCXnrUDszmJYNDX6gBc5GeQ&s',
           'Harrison\'s Principles of Internal Medicine',
           'Dennis L. Kasper, Anthony S. Fauci, Stephen L. Hauser, Dan L. Longo, J. Larry Jameson, Joseph Loscalzo',
           4.9,
@@ -48,7 +48,7 @@ class Book {
           ['Medicine', 'Internal Medicine', 'Textbook'],
           'Harrison\'s Principles of Internal Medicine is a textbook of internal medicine, written by numerous authors including Dennis L. Kasper, Anthony S. Fauci, and others. It is one of the most authoritative books in the field.'),
       Book(
-          'assets/images/medical_book4.jpg',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ49jP8nb0hqGdWrhwTlk6LlemVXmd5qvzsPQSWsd7xGw&s',
           'The Merck Manual of Diagnosis and Therapy',
           'Merck Sharp & Dohme Corp.',
           4.6,
@@ -57,7 +57,7 @@ class Book {
           ['Medicine', 'Diagnosis', 'Therapy'],
           'The Merck Manual of Diagnosis and Therapy is a widely used medical textbook, originally published by Merck & Co. It provides information on diseases, diagnosis, and treatment options.'),
       Book(
-          'assets/images/medical_book5.jpg',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1lCotAvR1W3-qUNX46pdmWjGdNxvybiJTfCw_YxOag&s',
           'Netter\'s Atlas of Human Anatomy',
           'Frank H. Netter',
           4.9,
@@ -72,7 +72,7 @@ class Book {
   static List<Book> generateTrendingBook() {
     return [
       Book(
-          'assets/images/medical_book6.jpg',
+          'https://m.media-amazon.com/images/I/81nqpZZx4sL._AC_UF1000,1000_QL80_DpWeblab_.jpg',
           'Medical Surgical Nursing: Assessment and Management of Clinical Problems',
           'Sharon L. Lewis, Linda Bucher, Margaret M. Heitkemper, Mariann M. Harding, Jeffrey Kwong, Dottie Roberts',
           4.7,
@@ -81,7 +81,7 @@ class Book {
           ['Medicine', 'Nursing', 'Textbook'],
           'Medical Surgical Nursing: Assessment and Management of Clinical Problems is a comprehensive textbook on medical-surgical nursing, written by Sharon L. Lewis and others. It covers various aspects of nursing care for patients with medical and surgical conditions.'),
       Book(
-          'assets/images/medical_book7.jpg',
+          'https://m.media-amazon.com/images/I/712bWSh99hL._AC_UF1000,1000_QL80_.jpg',
           'Basic and Clinical Pharmacology',
           'Bertram G. Katzung, Anthony J. Trevor',
           4.8,
@@ -90,7 +90,7 @@ class Book {
           ['Medicine', 'Pharmacology', 'Textbook'],
           'Basic and Clinical Pharmacology is a textbook on pharmacology, written by Bertram G. Katzung and Anthony J. Trevor. It covers the fundamental principles of pharmacology and their clinical applications.'),
       Book(
-          'assets/images/medical_book8.jpg',
+          'https://m.media-amazon.com/images/I/619WKDfDYBL._AC_UF1000,1000_QL80_.jpg',
           'Nelson Textbook of Pediatrics',
           'Robert M. Kliegman, Bonita M.D. Stanton, Joseph St. Geme, Nina F. Schor',
           4.9,
@@ -99,7 +99,7 @@ class Book {
           ['Medicine', 'Pediatrics', 'Textbook'],
           'Nelson Textbook of Pediatrics is a comprehensive textbook on pediatrics, written by Robert M. Kliegman and others. It provides authoritative information on pediatric diseases and their management.'),
       Book(
-          'assets/images/medical_book9.jpg',
+          'https://m.media-amazon.com/images/I/61g7i3-E5-L._AC_UF1000,1000_QL80_.jpg',
           'Current Medical Diagnosis and Treatment',
           'Maxine A. Papadakis, Stephen J. McPhee, Michael W. Rabow',
           4.6,
@@ -108,7 +108,7 @@ class Book {
           ['Medicine', 'Diagnosis', 'Treatment'],
           'Current Medical Diagnosis and Treatment is a trusted resource for medical students and clinicians, edited by Maxine A. Papadakis and Stephen J. McPhee. It offers practical guidance on the diagnosis and management of various medical conditions.'),
       Book(
-          'assets/images/medical_book10.jpg',
+          'https://m.media-amazon.com/images/I/71sg6KSb3OL._AC_UF1000,1000_QL80_.jpg',
           'The Washington Manual of Medical Therapeutics',
           'Hemant Godara, Dominique Williams, Pavan Bhat',
           4.7,
