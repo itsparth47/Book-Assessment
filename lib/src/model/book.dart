@@ -7,16 +7,19 @@ class Book {
   num? view;
   List<String>? type;
   String? desc;
+  bool isBookmarked; // Define the isBookmarked property
+
   Book(
-    this.imgUrl,
-    this.name,
-    this.author,
-    this.score,
-    this.review,
-    this.view,
-    this.type,
-    this.desc,
-  );
+      this.imgUrl,
+      this.name,
+      this.author,
+      this.score,
+      this.review,
+      this.view,
+      this.type,
+      this.desc,
+      {this.isBookmarked = false} // Provide a default value
+      );
 
   static List<Book> generateRecommendedBook() {
     return [

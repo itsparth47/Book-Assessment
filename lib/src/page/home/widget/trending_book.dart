@@ -3,9 +3,21 @@ import 'package:book_app/src/page/detail/detail.dart';
 import 'package:book_app/src/page/home/widget/category_title.dart';
 import 'package:flutter/material.dart';
 
-class TrendingBook extends StatelessWidget {
-  final trendingList = Book.generateTrendingBook();
+class TrendingBook extends StatefulWidget {
   TrendingBook({Key? key}) : super(key: key);
+
+  @override
+  _TrendingBookState createState() => _TrendingBookState();
+}
+
+class _TrendingBookState extends State<TrendingBook> {
+  List<Book> trendingList = Book.generateTrendingBook();
+
+  void toggleBookmark(int index) {
+    setState(() {
+      trendingList[index].isBookmarked = !trendingList[index].isBookmarked;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -37,66 +49,71 @@ class TrendingBook extends StatelessWidget {
                       ),
                       Expanded(
                           child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              Expanded(
-                                child: Text(
-                                  book.name!,
-                                  style: const TextStyle(
-                                    fontSize: 16,
-                                    fontWeight: FontWeight.bold,
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Expanded(
+                                    child: Text(
+                                      book.name!,
+                                      style: const TextStyle(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
                                   ),
-                                  overflow: TextOverflow.ellipsis,
-                                ),
+                                  IconButton(
+                                    icon: Icon(
+                                      book.isBookmarked
+                                          ? Icons.bookmark
+                                          : Icons.bookmark_border,
+                                      color: Colors.orange[300],
+                                    ),
+                                    onPressed: () => toggleBookmark(index),
+                                  ),
+                                ],
                               ),
-                              // Icon(
-                              //   Icons.bookmark,
-                              //   color: Colors.orange[300],
-                              // )
-                            ],
-                          ),
-                          Text(
-                            book.author!,
-                            style: TextStyle(color: Colors.grey),
-                          ),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          Text(
-                            book.desc!,
-                            overflow: TextOverflow.ellipsis,
-                            style: const TextStyle(color: Colors.grey),
-                          ),
-                          const SizedBox(
-                            height: 15,
-                          ),
-                          Row(
-                            children: [
-                              _buildIconText(Icons.star, Colors.orange[300]!,
-                                  '${book.score}(${book.review}k)'),
+                              Text(
+                                book.author!,
+                                style: TextStyle(color: Colors.grey),
+                              ),
                               const SizedBox(
-                                width: 10,
+                                height: 15,
                               ),
-                              _buildIconText(
-                                Icons.visibility,
-                                Colors.white,
-                                '${book.view}M Read',
+                              Text(
+                                book.desc!,
+                                overflow: TextOverflow.ellipsis,
+                                style: const TextStyle(color: Colors.grey),
+                              ),
+                              const SizedBox(
+                                height: 15,
+                              ),
+                              Row(
+                                children: [
+                                  _buildIconText(Icons.star, Colors.orange[300]!,
+                                      '${book.score}(${book.review}k)'),
+                                  const SizedBox(
+                                    width: 10,
+                                  ),
+                                  _buildIconText(
+                                    Icons.visibility,
+                                    Colors.white,
+                                    '${book.view}M Read',
+                                  ),
+                                ],
                               ),
                             ],
-                          ),
-                        ],
-                      ))
+                          ))
                     ],
                   ),
                 ),
               );
             },
             separatorBuilder: (_, index) => const SizedBox(
-                  height: 40,
-                ),
+              height: 40,
+            ),
             itemCount: trendingList.length)
       ],
     );
