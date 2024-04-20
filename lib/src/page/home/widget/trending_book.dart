@@ -52,10 +52,10 @@ class TrendingBook extends StatelessWidget {
                                   overflow: TextOverflow.ellipsis,
                                 ),
                               ),
-                              Icon(
-                                Icons.bookmark,
-                                color: Colors.orange[300],
-                              )
+                              // Icon(
+                              //   Icons.bookmark,
+                              //   color: Colors.orange[300],
+                              // )
                             ],
                           ),
                           Text(
