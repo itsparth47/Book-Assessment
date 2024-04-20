@@ -15,7 +15,7 @@ class RecommendedBook extends StatelessWidget {
       children: [
         const CategoryTitle('Recommended for you'),
         SizedBox(
-          height: 250,
+          height: 300,
           child: ListView.separated(
               scrollDirection: Axis.horizontal,
               padding: EdgeInsets.all(20),
@@ -31,14 +31,17 @@ class RecommendedBook extends StatelessWidget {
                       SizedBox(
                         width: 130,
                         child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
+                          // crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
                             Expanded(
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(10),
-                                child: Image.asset(
-                                  book.imgUrl!,
-                                  fit: BoxFit.cover,
+                                child: SizedBox(
+                                  height: 100,
+                                  child: Image.network(
+                                    book.imgUrl!,
+                                    fit: BoxFit.cover,
+                                  ),
                                 ),
                               ),
                             ),

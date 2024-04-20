@@ -25,12 +25,12 @@ class TrendingBook extends StatelessWidget {
                       builder: (context) => DetailPage(book)));
                 },
                 child: SizedBox(
-                  height: 120,
+                  height: 200,
                   child: Row(
                     children: [
                       ClipRRect(
                         borderRadius: BorderRadius.circular(10),
-                        child: Image.asset(book.imgUrl!),
+                        child: Image.network(book.imgUrl!),
                       ),
                       const SizedBox(
                         width: 20,
@@ -95,7 +95,7 @@ class TrendingBook extends StatelessWidget {
               );
             },
             separatorBuilder: (_, index) => const SizedBox(
-                  height: 10,
+                  height: 40,
                 ),
             itemCount: trendingList.length)
       ],

@@ -16,12 +16,13 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           CustomAppBar(settingsController: settingsController),
-          ComingBook(),
+          // ComingBook(),
+          SizedBox(height: 22,),
           RecommendedBook(),
           TrendingBook(),
         ],
       ),
-      bottomNavigationBar: _buildBottomNavigation(),
+      // bottomNavigationBar: _buildBottomNavigation(),
     );
   }
 

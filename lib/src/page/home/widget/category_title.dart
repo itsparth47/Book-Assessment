@@ -15,10 +15,10 @@ class CategoryTitle extends StatelessWidget {
             title,
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
           ),
-          const Text(
-            'See more',
-            style: TextStyle(color: Colors.grey),
-          )
+          // const Text(
+          //   'See more',
+          //   style: TextStyle(color: Colors.grey),
+          // )
         ],
       ),
     );
